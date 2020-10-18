@@ -1,0 +1,65 @@
+.mainCard {
+  background-color: #e4e4e4;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 1px -2px 9px 8px #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 20px;
+}
+
+.imageContainer {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+}
+
+.imageContainer img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.cardBottom {
+  flex: 3;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Name p {
+  font-size: x-large;
+}
+
+.price del {
+  font-weight: normal;
+  font-size: medium;
+}
+
+.price p {
+  font-weight: bold;
+  font-size: large;
+  color: rgba(238, 15, 15, 0.74);
+}
+
+.branding {
+  position: absolute;
+  bottom: 8%;
+  left: 5%;
+}
+
+.branding img {
+  width: 50px;
+  height: 50px;
+}
