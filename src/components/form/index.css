@@ -3,5 +3,8 @@
   /* align-items: flex-start; */
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 10px 10px 10px 10px !important;
+  overflow-y: auto;
+  overflow-x: hidden;
 }

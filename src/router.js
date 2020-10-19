@@ -7,7 +7,7 @@ import {
 
 import App from './App';
 import NewForm from './components/form';
-import Offer_details from './components/offer_details/offer_details'
+import OfferDetails from './components/offer_details/offer_details'
 
 function Router() {
   return (
@@ -15,7 +15,7 @@ function Router() {
     <BrowserRouter>
        <Switch>
           <Route exact path="/"><App/></Route>
-          <Route exact path="/details"><Offer_details/></Route>
+          <Route exact path="/details"><OfferDetails/></Route>
           <Route exact path="/form"><NewForm /></Route>
       
         </Switch>
