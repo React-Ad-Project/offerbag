@@ -44,11 +44,13 @@ p {
 
 .Name p {
   font-size: 20px;
+  color: black;
 }
 
 .price del {
   font-weight: normal;
   font-size: medium;
+  color: black;
 }
 
 .price p {
