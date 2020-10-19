@@ -1,13 +1,17 @@
+p {
+  margin: 0 !important;
+}
+
 .mainCard {
   background-color: #e4e4e4;
-  width: 300px;
-  height: 400px;
+  width: 150px;
+  height: 250px;
   border-radius: 10px;
-  box-shadow: 1px -2px 9px 8px #d6d6d6;
+  box-shadow: 1px 0px 15px 0px #d6d6d6;
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 20px;
+  margin: 10px;
 }
 
 .imageContainer {
@@ -18,8 +22,8 @@
 }
 
 .imageContainer img {
-  width: 80%;
-  height: 80%;
+  width: 100px;
+  height: 100px;
   border-radius: 10px;
 }
 
@@ -39,7 +43,7 @@
 }
 
 .Name p {
-  font-size: x-large;
+  font-size: 20px;
 }
 
 .price del {
@@ -60,6 +64,6 @@
 }
 
 .branding img {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }

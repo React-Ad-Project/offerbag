@@ -1,12 +1,15 @@
 
 import React from 'react';
 import './App.css';
-import Card from "./Comonents/Card"
+import Card from "./components/Card"
+import Header from "./components/Header"
 
 
 
 function App() {
   return (
+    <>
+    <Header />
     <div className="home">
     <Card />
     <Card />
@@ -20,6 +23,7 @@ function App() {
     <Card />
     <Card />
     </div>
+    </>
   );
 }
 
