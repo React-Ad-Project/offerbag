@@ -26,9 +26,8 @@ function Offer_details({location}) {
             <button type="button" class="btn btn-primary btn-md mr-1 mb-2"><a href={location.state.link}>Buy now</a></button>
             </div>
         
-        </div>
-
-
-    )
+       
+    </div>
+  );
 }
 export default withRouter(Offer_details)
