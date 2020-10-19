@@ -34,8 +34,8 @@ function App() {
     <div className="home">
     {cards.map((card)=>{
     return(
-      <Link to={'/details'}>
-      <Card data={card}/>
+      <Link to={{pathname:'/details',state:card}}>
+      <Card data={card} />
       </Link>
     )
   })}
