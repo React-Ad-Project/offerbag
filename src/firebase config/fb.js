@@ -2,8 +2,6 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 import "firebase/storage";
-import "@firebase/functions";
-import "@firebase/messaging";
 
 var firebaseConfig = {
   apiKey: "AIzaSyCdqMPXszM7IIhqdjlhDP-iBSq1WcOyQQg",

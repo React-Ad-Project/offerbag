@@ -1,7 +1,10 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './index.css';
 
+
+
 const Card  = () => {
+  
     return(
         <div className="mainCard">
             <div className="imageContainer">
