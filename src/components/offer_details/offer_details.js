@@ -1,7 +1,8 @@
 import React from 'react'
 import './offer_details.css'
 
-export default function Offer_details() {
+export default function Offer_details(props) {
+   
     return (
         <div className="details-main">
             <div className="detail-img">

@@ -3,7 +3,7 @@ import './index.css';
 
 
 
-const Card  = () => {
+const Card  = (props) => {
   
     return(
         <div className="mainCard">
@@ -12,11 +12,11 @@ const Card  = () => {
             </div>
             <div className="cardBottom">
             <div className="Name">
-                    <p>Product Name</p>
+                    <p>{props.data.name}</p>
                 </div>
                 <div className="price">
-                <del>$3.99</del>
-                <p>$1.99</p>
+                <del>{props.data.price}</del>
+                <p>{props.data.off_price}</p>
                 </div>
                 <div className="branding">
                     <img src="https://www.nicepng.com/png/detail/790-7909408_flipkart-accessories-for-mobile-headphones-tablet-icon-of.png" alt="Sample" />

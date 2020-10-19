@@ -5,6 +5,7 @@ import Card from "./components/Card"
 import Header from "./components/Header"
 import './firebase config/fb'
 import app from 'firebase';
+import { Link } from 'react-router-dom';
 
 function App() {
   
@@ -26,22 +27,19 @@ function App() {
       
   
   console.log(cards)
-  
+ 
   return (
     <>
     <Header />
     <div className="home">
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+    {cards.map((card)=>{
+    return(
+      <Link to={'/details'}>
+      <Card data={card}/>
+      </Link>
+    )
+  })}
+    
     </div>
     </>
   );
