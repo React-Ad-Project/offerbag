@@ -28,30 +28,19 @@ function App() {
   console.log(cards);
 
   return (
-  //   <>
-  //   <Header />
-  //   <div className="home">
-  //   {cards.map((card)=>{
-  //   return(
-  //     <Link to={{pathname:'/details',state:card}}key={card.id}>
-  //     <Card data={card} />
-  //     </Link>
-  //   )
-  // })}
-    
-  //   </div>
-  //     <Header />
+    <>
+      <Header />
       <div className="home">
         {loading && <Spin size="large" style={{ marginTop: 20 }} />}
-        {cards.map((card, id) => {
+        {cards.map((card) => {
           return (
-            <Link to={{pathname:'/details',state:card}}key={card.id}>
+            <Link to={{ pathname: "/details", state: card }} key={card.id}>
               <Card data={card} />
             </Link>
           );
         })}
       </div>
-  
+    </>
   );
 }
 

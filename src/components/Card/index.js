@@ -5,10 +5,7 @@ const Card = (props) => {
   return (
     <div className="mainCard">
       <div className="imageContainer">
-        <img
-          src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg"
-          alt="Sample"
-        />
+        <img src={props.data.imgUrl} alt="Sample" />
       </div>
       <div className="cardBottom">
         <div className="Name">
