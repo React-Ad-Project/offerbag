@@ -124,6 +124,26 @@ const NewForm = () => {
         <Input.TextArea placeholder="Enter the product description." />
       </Form.Item>
       <Form.Item
+        name={["product", "category"]}
+        label="Product Category"
+        hasFeedback
+        rules={[
+          { required: true, message: "Please select the product Category!" },
+        ]}
+      >
+        <Select placeholder="Please select the Product Category">
+          <Option value="electronics">Electronics</Option>
+          <Option value="mobile">Mobile</Option>
+          <Option value="fashion">Fashion</Option>
+          <Option value="tv">TV's and Appliances</Option>
+          <Option value="beauty">Beauty</Option>
+          <Option value="furniture">Furniture</Option>
+          <Option value="home">Home Essentials</Option>
+          <Option value="books">Books</Option>
+          <Option value="sports">Sports</Option>
+        </Select>
+      </Form.Item>
+      <Form.Item
         name={["product", "provider"]}
         label="Offer Provider"
         hasFeedback

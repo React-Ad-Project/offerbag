@@ -6,6 +6,7 @@ import "./firebase config/fb";
 import app from "firebase";
 import { Link } from "react-router-dom";
 import { Spin } from "antd";
+import FloatingButton from "./components/FloatingButton";
 
 function App() {
   const [cards, SetCard] = useState([]);
@@ -39,6 +40,7 @@ function App() {
             </Link>
           );
         })}
+        <FloatingButton />
       </div>
     </>
   );
