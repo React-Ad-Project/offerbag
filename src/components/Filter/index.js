@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import { LeftOutlined, CloseOutlined } from "@ant-design/icons";
 import "./index.css";
 import SelectCategory from "./SelectCategory";
+import { Redirect, withRouter } from "react-router";
 
-export default class extends Component {
+class Filter extends Component {
   constructor(props) {
     super(props);
 
@@ -48,7 +49,14 @@ export default class extends Component {
         <div onClick={this.onSubmit} className="filter-apply-button">
           Apply
         </div>
+        {this.state.redirect && (
+          <Redirect
+            to={{ pathname: "/", state: { categories: this.state.categories } }}
+          />
+        )}
       </div>
     );
   }
 }
+
+export default withRouter(Filter);

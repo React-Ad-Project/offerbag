@@ -27,15 +27,15 @@ export default class extends Component {
 
   render() {
     const categories = [
-      "Electronics",
-      "Mobile",
-      "Fashion",
+      "electronics",
+      "mobile",
+      "fashion",
       "TV's and Appliances",
-      "Beauty",
-      "Furniture",
-      "Home essentials",
-      "Books",
-      "Sports",
+      "beauty",
+      "furniture",
+      "home essentials",
+      "books",
+      "sports",
     ];
     return (
       <div className="filter-cat-layout">
