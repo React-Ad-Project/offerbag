@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import React from "react";
 import "./index.css";
 
@@ -12,8 +13,13 @@ const Card = (props) => {
           <p>{props.data.name}</p>
         </div>
         <div className="price">
-          <del>₹{props.data.price}</del>
           <p>₹{props.data.off_price}</p>
+          <del>₹{props.data.price}</del>
+        </div>
+        <div className="buttonContainer">
+          <Button type="default" className="buyNowButton">
+            Buy
+          </Button>
         </div>
         <div className="branding">
           <img
