@@ -25,7 +25,6 @@ function Router() {
           <Route exact path="/form">
             <NewForm />
           </Route>
-
           <Route exact path="/search">
             <Discover />
           </Route>

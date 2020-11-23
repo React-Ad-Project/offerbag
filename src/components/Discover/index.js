@@ -26,7 +26,10 @@ const Discover = (props) => {
   useEffect(() => {
     setSearching(true);
     if (props.location) {
-      if (props.location.state) {
+      if (
+        props.location.state &&
+        props.location.state.categories.length !== 0
+      ) {
         app
           .firestore()
           .collection("OfferBag")

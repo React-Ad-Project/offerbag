@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  padding: 10px 10px 10px 10px !important;
+  padding: 10px 10px 60px 10px !important;
   overflow-y: auto;
   overflow-x: hidden;
 }

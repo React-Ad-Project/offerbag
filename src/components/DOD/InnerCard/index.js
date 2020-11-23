@@ -10,20 +10,19 @@ const InnerCard = (props) => {
           src="https://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG"
           alt="something"
         ></img>
-        <h2>Name of Product</h2>
-        <h2 className="price">₹24,999</h2>
+        <h2>{props.data.name}</h2>
+        <h2 className="price">{props.data.price}</h2>
         <h2>
-          <del>₹26,999</del>
+          <del>{props.data.off_price}</del>
         </h2>
-        <Button type="default" className="innerButton">
-          Buy
-        </Button>
+        <a href={props.data.link}>
+          <Button type="default" className="innerButton">
+            Buy
+          </Button>
+        </a>
       </div>
       <div className="row2">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/81nEs%2Bl5UgL._SL1500_.jpg"
-          alt="something"
-        ></img>
+        <img src={props.data.imgUrl} alt="something"></img>
       </div>
     </div>
   );

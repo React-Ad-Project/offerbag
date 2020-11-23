@@ -1,17 +1,37 @@
-import React from "react";
-import { Carousel } from "antd";
+import React, { useEffect, useState } from "react";
+import { Carousel, Skeleton, Spin } from "antd";
 import "./index.css";
-
+import app from "../../firebase config/fb";
 import "./InnerCard";
 import InnerCard from "./InnerCard";
 
 const DOD = (props) => {
+  const [cards, SetCard] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    app
+      .firestore()
+      .collection("OfferBag")
+      .where("dod", "==", true)
+      .onSnapshot((snapshot) => {
+        const newCards = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        console.log(newCards);
+        SetCard(newCards);
+        setLoading(false);
+      });
+  }, []);
   return (
     <div className="DodCard">
+      {loading && <Skeleton active />}
       <Carousel autoplay dotPosition="bottom">
-        <InnerCard />
-        <InnerCard />
-        <InnerCard />
+        {cards &&
+          cards.map((card) => {
+            return <InnerCard data={card} />;
+          })}
       </Carousel>
     </div>
   );

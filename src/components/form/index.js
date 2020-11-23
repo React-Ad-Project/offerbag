@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./index.css";
-import { Form, Input, InputNumber, Button, Select } from "antd";
+import { Form, Input, InputNumber, Button, Select, Checkbox } from "antd";
 import "antd/dist/antd.css";
 import "../../firebase config/fb";
 import app from "firebase";
@@ -158,6 +158,13 @@ const NewForm = () => {
           <Option value="lenskart">Lenskart</Option>
           <Option value="myntra">Myntra</Option>
         </Select>
+      </Form.Item>
+      <Form.Item
+        wrapperCol={{ ...layout.wrapperCol, offset: 8 }}
+        name={["product", "dod"]}
+        valuePropName="checked"
+      >
+        <Checkbox>Deal of the Day</Checkbox>
       </Form.Item>
       <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
         <Button type="primary" htmlType="submit" loading={load}>
