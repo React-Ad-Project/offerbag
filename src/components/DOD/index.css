@@ -1,0 +1,30 @@
+.DodCard {
+  width: 85vw;
+  background-color: white;
+  border-radius: 30px;
+  min-height: 200px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.customCarousel {
+  width: 85vw !important;
+  min-height: 180px !important;
+  border-radius: 30px;
+  padding: 20px;
+  color: #fff;
+  line-height: 160px;
+  text-align: center;
+}
+
+.ant-carousel .slick-dots-bottom {
+  bottom: -50px !important;
+}
+
+.ant-carousel .slick-dots li {
+  background-color: #4869ff !important;
+}
+
+.ant-carousel .slick-slider {
+  -webkit-tap-highlight-color: #4869ff !important;
+}

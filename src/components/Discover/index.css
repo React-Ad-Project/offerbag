@@ -1,0 +1,20 @@
+.DiscoverPage {
+  padding: 20px;
+}
+
+.customSearch {
+  border-radius: 5px;
+}
+
+.customSearch .ant-btn {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}

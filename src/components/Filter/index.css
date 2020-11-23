@@ -1,0 +1,41 @@
+.filter-background {
+  background: #ff5773;
+  background: -webkit-linear-gradient(right, #ff5773, #ff8d48);
+  background: -moz-linear-gradient(right, #ff5773, #ff8d48);
+  background: linear-gradient(to left, #ff5773, #ff8d48);
+  color: white;
+}
+
+.filter-main-layout {
+  background-color: white;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filter-location {
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.filter-inner-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.filter-apply-button {
+  height: 50px;
+  background-color: #5562ff;
+  border-radius: 10px 10px 0px 0px;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

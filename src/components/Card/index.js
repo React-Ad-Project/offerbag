@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import React from "react";
 import "./index.css";
 
@@ -5,18 +6,22 @@ const Card = (props) => {
   return (
     <div className="mainCard">
       <div className="imageContainer">
-        <img
-          src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13.jpg"
-          alt="Sample"
-        />
+        <img src={props.data.imgUrl} alt="Sample" />
       </div>
       <div className="cardBottom">
         <div className="Name">
           <p>{props.data.name}</p>
         </div>
         <div className="price">
-          <del>₹{props.data.price}</del>
           <p>₹{props.data.off_price}</p>
+          <del>₹{props.data.price}</del>
+        </div>
+        <div className="buttonContainer">
+          <a href={props.data.link}>
+            <Button type="default" className="buyNowButton">
+              Buy
+            </Button>
+          </a>
         </div>
         <div className="branding">
           <img

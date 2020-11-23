@@ -1,5 +1,11 @@
 body {
-  background-color: white;
+  background-color: gainsboro !important;
+}
+
+.offersText {
+  padding-left: 30px;
+  font-weight: bold;
+  color: rgba(53, 53, 53, 0.904);
 }
 
 .home {
