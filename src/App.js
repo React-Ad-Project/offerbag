@@ -6,7 +6,7 @@ import "./firebase config/fb";
 import app from "firebase";
 import { Link } from "react-router-dom";
 import { Spin } from "antd";
-
+import Layout from './Layout'
 function App() {
   const [cards, SetCard] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -28,30 +28,19 @@ function App() {
   console.log(cards);
 
   return (
-  //   <>
-  //   <Header />
-  //   <div className="home">
-  //   {cards.map((card)=>{
-  //   return(
-  //     <Link to={{pathname:'/details',state:card}}key={card.id}>
-  //     <Card data={card} />
-  //     </Link>
-  //   )
-  // })}
-    
-  //   </div>
-  //     <Header />
-      <div className="home">
-        {loading && <Spin size="large" style={{ marginTop: 20 }} />}
-        {cards.map((card, id) => {
-          return (
-            <Link to={{pathname:'/details',state:card}}key={card.id}>
-              <Card data={card} />
-            </Link>
-          );
-        })}
-      </div>
-  
+  <Layout>
+    <div className="home">
+      {loading && <Spin size="large" style={{ marginTop: 20 }} />}
+      {cards.map((card, id) => {
+        return (
+          <Link to={{ pathname: '/details', state: card }} key={card.id}>
+            <Card data={card} />
+          </Link>
+        );
+      })}
+    </div>
+    </Layout>
+
   );
 }
 
