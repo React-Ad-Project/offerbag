@@ -7,6 +7,7 @@ import app from "firebase";
 import { Link, withRouter } from "react-router-dom";
 import { Spin } from "antd";
 import FloatingButton from "./components/FloatingButton";
+import Layout from './Layout'
 
 function App({ location }) {
   const [cards, SetCard] = useState([]);
@@ -48,7 +49,6 @@ function App({ location }) {
   console.log(cards);
 
   return (
-<<<<<<< HEAD
   <Layout>
     <div className="home">
       {loading && <Spin size="large" style={{ marginTop: 20 }} />}
@@ -62,18 +62,6 @@ function App({ location }) {
     </div>
     </Layout>
 
-=======
-    <>
-      <Header />
-      <h2 className="offersText">Offers</h2>
-      <div className="home">
-        {loading && <Spin size="large" style={{ marginTop: 20 }} />}
-        {cards.map((card) => {
-          return <Card data={card} />;
-        })}
-      </div>
-    </>
->>>>>>> 60d8b722154ce4a39674198d287796e0248f336d
   );
 }
 
