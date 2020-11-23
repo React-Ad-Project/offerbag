@@ -18,25 +18,9 @@
 .bottom-bar-item{
   display: flex;
   flex-direction: column;
+  font-weight: 10px;
 }
 
-.iconInBottomBar {
-  font-size: 25px;
-  /* border-radius: 25%; */
-}
-
-.iconInBottomBarPressed {
-  border-radius: 40%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background: linear-gradient(145deg, #ffffff, #e6e6e6, #ffffff);
-  box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #ffffff; */
-  background: #ffffff;
-  box-shadow: inset 5px 5px 21px #f0efef, inset 5px 5px 21px #f0efef;
-}
 
 .bottom-bar-item:hover {
   font-size: 16px;
