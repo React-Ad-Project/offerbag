@@ -7,6 +7,7 @@
 }
 
 .filter-main-layout {
+  background-color: white;
   display: flex;
   height: 100vh;
   flex-direction: column;

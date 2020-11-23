@@ -51,7 +51,10 @@ class Filter extends Component {
         </div>
         {this.state.redirect && (
           <Redirect
-            to={{ pathname: "/", state: { categories: this.state.categories } }}
+            to={{
+              pathname: "/search",
+              state: { categories: this.state.categories },
+            }}
           />
         )}
       </div>

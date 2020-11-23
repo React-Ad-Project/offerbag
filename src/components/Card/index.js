@@ -17,9 +17,11 @@ const Card = (props) => {
           <del>₹{props.data.price}</del>
         </div>
         <div className="buttonContainer">
-          <Button type="default" className="buyNowButton">
-            Buy
-          </Button>
+          <a href={props.data.link}>
+            <Button type="default" className="buyNowButton">
+              Buy
+            </Button>
+          </a>
         </div>
         <div className="branding">
           <img

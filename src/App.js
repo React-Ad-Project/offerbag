@@ -50,16 +50,12 @@ function App({ location }) {
   return (
     <>
       <Header />
+      <h2 className="offersText">Offers</h2>
       <div className="home">
         {loading && <Spin size="large" style={{ marginTop: 20 }} />}
         {cards.map((card) => {
-          return (
-            <Link to={{ pathname: "/details", state: card }} key={card.id}>
-              <Card data={card} />
-            </Link>
-          );
+          return <Card data={card} />;
         })}
-        <FloatingButton />
       </div>
     </>
   );
