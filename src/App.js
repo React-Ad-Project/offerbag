@@ -6,8 +6,6 @@ import "./firebase config/fb";
 import app from "firebase";
 import { Link, withRouter } from "react-router-dom";
 import { Spin } from "antd";
-import FloatingButton from "./components/FloatingButton";
-import Layout from "./Layout";
 
 function App({ location }) {
   const [cards, SetCard] = useState([]);
@@ -26,7 +24,7 @@ function App({ location }) {
             id: doc.id,
             ...doc.data(),
           }));
-          console.log(newCards);
+          // console.log(newCards);
           SetCard(newCards);
           setLoading(false);
         });
@@ -39,14 +37,12 @@ function App({ location }) {
             id: doc.id,
             ...doc.data(),
           }));
-          console.log(newCards);
+          // console.log(newCards);
           SetCard(newCards);
           setLoading(false);
         });
     }
-  }, []);
-
-  console.log(cards);
+  }, [location.state]);
 
   return (
     <>

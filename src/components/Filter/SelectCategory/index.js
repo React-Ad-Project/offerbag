@@ -41,8 +41,8 @@ export default class extends Component {
       <div className="filter-cat-layout">
         <h4>Select Category</h4>
         <div className="filter-cat-grid">
-          {categories.map((item) => (
-            <Selectables title={item} onSelectCat={this.onSelectCat} />
+          {categories.map((item, id) => (
+            <Selectables title={item} key={id} onSelectCat={this.onSelectCat} />
           ))}
         </div>
       </div>

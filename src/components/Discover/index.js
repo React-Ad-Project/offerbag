@@ -39,7 +39,7 @@ const Discover = (props) => {
               id: searchValue.id,
               ...searchValue.data(),
             }));
-            console.log(search);
+            // console.log(search);
             setItems(search);
             setSearching(false);
             if (search.length === 0) {
@@ -54,7 +54,7 @@ const Discover = (props) => {
   const onSearch = ({ target }) => {
     let { value } = target;
     value = value.toLowerCase();
-    console.log("fetching data", value);
+    // console.log("fetching data", value);
     setItems([]);
     setNothing(false);
     if (value !== "") {
@@ -70,7 +70,7 @@ const Discover = (props) => {
             id: searchValue.id,
             ...searchValue.data(),
           }));
-          console.log(search);
+          // console.log(search);
           setItems(search);
           setSearching(false);
           if (search.length === 0) {

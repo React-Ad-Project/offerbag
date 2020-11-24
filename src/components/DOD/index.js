@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Carousel, Skeleton, Spin } from "antd";
+import { Carousel, Skeleton } from "antd";
 import "./index.css";
 import app from "../../firebase config/fb";
 import "./InnerCard";
@@ -19,7 +19,7 @@ const DOD = (props) => {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log(newCards);
+        // console.log(newCards);
         SetCard(newCards);
         setLoading(false);
       });
@@ -30,7 +30,7 @@ const DOD = (props) => {
       <Carousel autoplay dotPosition="bottom">
         {cards &&
           cards.map((card) => {
-            return <InnerCard data={card} />;
+            return <InnerCard data={card} key={card.id} />;
           })}
       </Carousel>
     </div>

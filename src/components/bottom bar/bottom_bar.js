@@ -6,19 +6,19 @@ const BottomBar = () => {
   return (
     <div className="bottom-bar-main">
       <Link to="/">
-        <div class="bottom-bar-item">
+        <div className="bottom-bar-item">
           <HomeOutlined />
           <span>Home</span>
         </div>
       </Link>
       <Link to="/search">
-        <div class="bottom-bar-item">
+        <div className="bottom-bar-item">
           <SearchOutlined />
           <span>Discover</span>
         </div>
       </Link>
       <Link to="/">
-        <div class="bottom-bar-item">
+        <div className="bottom-bar-item">
           <HeartOutlined />
           <span>Favourites</span>
         </div>

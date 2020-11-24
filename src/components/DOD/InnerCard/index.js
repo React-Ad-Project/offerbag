@@ -11,9 +11,9 @@ const InnerCard = (props) => {
           alt="something"
         ></img>
         <h2>{props.data.name}</h2>
-        <h2 className="price">{props.data.price}</h2>
+        <h2 className="price">₹{props.data.price}</h2>
         <h2>
-          <del>{props.data.off_price}</del>
+          <del>₹{props.data.off_price}</del>
         </h2>
         <a href={props.data.link}>
           <Button type="default" className="innerButton">
