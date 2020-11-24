@@ -1,13 +1,15 @@
 import { Button } from "antd";
 import React from "react";
 import "./index.css";
+import Amazon from "./amazon.png";
+import Flipkart from "./flipkart.jpeg";
 
 const InnerCard = (props) => {
   return (
     <div className="innerCard">
       <div className="row1">
         <img
-          src="https://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG"
+          src={props.data.provider === "amazon" ? Amazon : Flipkart}
           alt="something"
         ></img>
         <h2>{props.data.name}</h2>

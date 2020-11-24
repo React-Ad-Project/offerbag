@@ -1,6 +1,8 @@
 import { Button } from "antd";
 import React from "react";
 import "./index.css";
+import Amazon from "./amazon_small.png";
+import Flipkart from "./flipkart_small.png";
 
 const Card = (props) => {
   return (
@@ -25,7 +27,8 @@ const Card = (props) => {
         </div>
         <div className="branding">
           <img
-            src="https://www.nicepng.com/png/detail/790-7909408_flipkart-accessories-for-mobile-headphones-tablet-icon-of.png"
+            // src="https://www.nicepng.com/png/detail/790-7909408_flipkart-accessories-for-mobile-headphones-tablet-icon-of.png"
+            src={props.data.provider === "amazon" ? Amazon : Flipkart}
             alt="Sample"
           />
         </div>
