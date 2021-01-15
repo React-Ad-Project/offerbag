@@ -1,6 +1,6 @@
 .topHeader {
   width: 100%;
-  height: 45vh;
+  height: 400px;
 }
 
 .header {
@@ -34,4 +34,10 @@
   color: white;
   font-weight: bold;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 760px) {
+  .topHeader {
+    height: 400px;
+  }
 }

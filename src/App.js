@@ -4,7 +4,7 @@ import Card from "./components/Card";
 import Header from "./components/Header";
 import "./firebase config/fb";
 import app from "firebase";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import { Spin } from "antd";
 
 function App({ location }) {
@@ -45,19 +45,15 @@ function App({ location }) {
   }, [location.state]);
 
   return (
-    <>
+    <div className="majorDiv">
       <Header />
       <div className="home">
         {loading && <Spin size="large" style={{ marginTop: 20 }} />}
         {cards.map((card, id) => {
-          return (
-            <Link to={{ pathname: "/details", state: card }} key={card.id}>
-              <Card data={card} />
-            </Link>
-          );
+          return <Card data={card} />;
         })}
       </div>
-    </>
+    </div>
   );
 }
 
